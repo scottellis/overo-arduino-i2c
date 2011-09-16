@@ -1,0 +1,16 @@
+# Native makefile for the overo-arduino-i2c test program
+#
+# Usage: make -f Makefile-native
+#
+
+CC = gcc
+CFLAGS = -Wall
+
+TARGET = overo-i2c 
+
+$(TARGET) : overo-i2c.c
+	$(CC) $(CFLAGS) overo-i2c.c -o $(TARGET)
+
+clean :
+	rm -f $(TARGET)
+
