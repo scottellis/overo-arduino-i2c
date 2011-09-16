@@ -68,7 +68,6 @@ To build the C program on your workstation using the OE cross-compiler
     ~$ cd overo-arduino-i2c/overo-c
     ~$ export OETMP=/oe5 [optional if you have a non-standard OETMP]
     ~$ make
-    ~$ export OETMP=/oe5
     /oe5/sysroots/`uname -m`-linux/usr/armv7a/bin/arm-angstrom-linux-gnueabi-gcc -Wall -I /oe5/sysroots/armv7a-   angstrom-linux-gnueabi/usr/include -L /oe5/sysroots/armv7a-angstrom-linux-gnueabi/usr/lib overo-i2c.c -o overo-i2c
     
 Then copy the *overo-i2c* executable to your Overo.
