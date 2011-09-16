@@ -17,7 +17,7 @@
 int main(int argc, char **argv)
 {
 	int fh;
-	char buff[40];
+	char buff[ARDUINO_I2C_BUFFER_LIMIT + 4];
 	int len, sent, rcvd;
 
 	fh = open("/dev/i2c-3", O_RDWR);

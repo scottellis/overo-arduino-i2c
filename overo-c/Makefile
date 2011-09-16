@@ -13,12 +13,11 @@ CFLAGS = -Wall
 
 LIBDIR = $(STAGEDIR)/lib
 INCDIR = $(STAGEDIR)/include
-DRIVERDIR = ../../../ad768x
 
 TARGET = overo-i2c 
 
 $(TARGET) : overo-i2c.c
-	$(CC) $(CFLAGS) -I $(DRIVERDIR) -I $(INCDIR) -L $(LIBDIR) overo-i2c.c -o $(TARGET)
+	$(CC) $(CFLAGS) -I $(INCDIR) -L $(LIBDIR) overo-i2c.c -o $(TARGET)
 
 install:
 	scp $(TARGET) root@192.168.10.106:/home/root
