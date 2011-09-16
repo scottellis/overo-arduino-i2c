@@ -3,6 +3,8 @@
 
 Some example programs for Gumstix Overo to Arduino I2C communication.
 
+There is some more documentation here [Gumstix to Arduino using I2C](http://www.jumpnowtek.com/index.php?option=com_content&view=article&id=68:gumstix-arduino-i2c&catid=39:arduino&Itemid=76)
+
 The Arduino is a more flexible I2C device because it can be either a master or slave
 device on the I2C bus. Because of the Linux driver, the Overo can only be an I2C
 master.
